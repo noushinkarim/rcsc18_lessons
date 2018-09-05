@@ -1,21 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def analyse(filename):
     """
-    Reads data from the specified file and plots the average, maximum and minimum along the first
-    axis of the data.
-
+    Reads data from the specified file and plots the average, maximum and minimum along the first axis of the data.
+    
     Parameters
     ----------
     filename : str
-        Name or path to a file containing data to be plotted. Data should be 2-dimensional and
-        values should be separated by commas.
-
+        Name or path to a file containing data to be plotted. Data should be 2-dimensional and values should be
+        separated by commas.
+    
     Examples
     --------
-    >>> analyse('/path/to/mydata.csv')
+    >>> analyse('/path/to/mydata.dat')
     """
 
     data = np.loadtxt(fname=filename, delimiter=',')
@@ -42,16 +40,16 @@ def analyse(filename):
 def detect_problems(filename):
     """
     Tests data stored in the specified file for spurious or unexpected values.
-
+    
     Parameters
     ----------
     filename : str
-        Name or path to a file containing data to tested. Data should be 2-dimensional and values
-        should be separated by commas.
-
+        Name or path to a file containing data to tested. Data should be 2-dimensional and values should be
+        separated by commas.
+        
     Examples
     --------
-    >>> detect_problems('/path/to/mydata.csv')
+    >>> analyse('/path/to/mydata.dat')
     """
     data = np.loadtxt(fname=filename, delimiter=',')
 
